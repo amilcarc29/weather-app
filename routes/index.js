@@ -8,6 +8,7 @@ router.use(function(req, res) {
   res.sendFile(path.join(__dirname, "../client/build/index.html"));
 });
 
+// FIXME: Use router.get() and router.post()
 module.exports = app => {
   let city;
   app.post("/search-location", (req, res) => {
