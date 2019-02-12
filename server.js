@@ -7,7 +7,6 @@ app.use(bodyParser.urlencoded({ extended: true }));
 
 app.use(express.static("client/build"));
 
-// FIXME: Use const routes = require("./routes");
 require("./routes")(app);
 
 app.listen(5000, function() {
