@@ -23,7 +23,7 @@ module.exports = app => {
         .then(res => res.json())
         .then(data => res.send({ data }))
         .catch(err => {
-          res.redirect("/error");
+          res.send("Location weather not found.");
         });
       city = "";
     }
